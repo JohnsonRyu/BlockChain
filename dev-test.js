@@ -1,4 +1,4 @@
 const Block = require('./block');
 
-const block = new Block('foo', 'bar', 'zoo', 'baz');
-console.log(block.toString());
+const GHBlock = Block.mineBlock(Block.genesis(), 'GH');
+console.log(GHBlock.toString());
